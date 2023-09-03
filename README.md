@@ -90,11 +90,13 @@ sudo apt-get install nodejs -y
 ### 2. เปิด หรือ Split Terminal อีกอัน 
 ##### สร้าง SSH reverse tunnel เพื่อเปิดพอร์ต 3000 บน Remote.moe และเชื่อมต่อไปยังพอร์ต 3000 ในเครื่องของคุณ.
 ```shell
+# generate ssh key ของ remote.moe
 ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
 ssh-keyscan -t rsa remote.moe >> ~/.ssh/known_hosts
-ssh -R 3000:localhost:3000 remote.moe
-# คลิกลิงค์ที่ ถูกสร้างขึ้นมา
 ```
+## คลิกลิงค์ที่ ถูกสร้างขึ้นมา (run คำสั่งนี้ ซ้ำเมื่อต้องการใช้ครั้งหน้า)
+`$ ssh -R 3000:localhost:3000 remote.moe` 
+ 
 ## อ้างอิงข้อมูลจาก
 [code-server](https://coder.com/docs/code-server/latest)
 [caddy](https://caddyserver.com/docs/install#debian-ubuntu-raspbian)
