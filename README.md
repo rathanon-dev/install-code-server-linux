@@ -46,9 +46,9 @@ sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | 
 
 ![image](https://github.com/ratanon-144/install-code-server-linux/assets/88425078/9e05c2fd-1104-4c6a-a77e-67670d8e2646)
 
-## add dominname 
+## add domainname อ่านก่อน >> [caddy](https://coder.com/docs/code-server/latest/guide#using-lets-encrypt-with-caddy)
 ```shell
-  dominname.com {
+  domainname.com {
   # กำหนดประเทศไทย IP range หรือ IP ที่คุณต้องการ
   @internal {
      remote_ip 1.0.0.0/8 
