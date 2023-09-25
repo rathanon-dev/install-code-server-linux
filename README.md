@@ -96,7 +96,21 @@ ssh-keyscan -t rsa remote.moe >> ~/.ssh/known_hosts
 ```
 ## คลิกลิงค์ที่ ถูกสร้างขึ้นมา (run คำสั่งนี้ ซ้ำเมื่อต้องการใช้ครั้งหน้า)
 `$ ssh -R 3000:localhost:3000 remote.moe` 
+
+
+## แก้ jupyter notebook (venv) not import
+##### แก้ใชไฟล์ pyvenv.cfg ที่อยู่ในโฟลเดอร์ .venv หรือชื่อทีใช้สร้าง venv
+![venv](https://github.com/ratanon-144/install-code-server-linux/assets/88425078/7af40789-45db-4b87-a70d-dba8a66f7144)
+##### แก้ เป็น true แล้ว save
+```shell 
+include-system-site-packages = true  
+```
+
+![change](https://github.com/ratanon-144/install-code-server-linux/assets/88425078/7adc2e8d-f125-4044-b3a3-bf9aa099c7fb)
+
  
+[stackoverflow](https://stackoverflow.com/questions/45666097/importerror-no-module-named-pandas-inside-virtualenv)
+
 ## อ้างอิงข้อมูลจาก
 [code-server](https://coder.com/docs/code-server/latest)
 [caddy](https://caddyserver.com/docs/install#debian-ubuntu-raspbian)
