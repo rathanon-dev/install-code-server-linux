@@ -111,6 +111,23 @@ include-system-site-packages = true
  
 [stackoverflow](https://stackoverflow.com/questions/45666097/importerror-no-module-named-pandas-inside-virtualenv)
 
+## Set Python 3.12 as default in Debian 12:
+#### 1.) First, install Python3.12 as alternative for python via command:
+``shell
+sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.12 1
+``
+#### Then, run the command below and type the number for Python 3.12:
+``shell
+sudo update-alternatives --config python
+``
+### 2.) For pip, it’s recommended to use python3.12 -m pip install command. If you insists, run commands below one by one to set it as default.
+``shell
+sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.12 1
+``<br>
+``shell
+sudo update-alternatives --config pip
+``<br>
+[fostips](https://fostips.com/install-python-3-10-debian-11/)
 ## อ้างอิงข้อมูลจาก
 [code-server](https://coder.com/docs/code-server/latest)
 [caddy](https://caddyserver.com/docs/install#debian-ubuntu-raspbian)
