@@ -110,6 +110,10 @@ umount /mnt
 Reboot VPS 
 
 https://blog.logrocket.com/how-to-run-node-js-server-nginx/
+แก้ proxy_pass ง่ายๆๆ ลบ link backup-default ออกจบ
+```shell
+sudo rm /etc/nginx/sites-enabled/backup-default
+```
 # install nodejs v 18.x
 ### add keyrings
 ```shell
