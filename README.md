@@ -63,7 +63,8 @@ sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | 
 ```
 ### แก้ไข แล้ว  reload caddy
 `$ sudo systemctl reload caddy`
-## ทำ SSL >> [Nginx SSL (digitalocean)]([https://coder.com/docs/code-server/latest/guide#using-lets-encrypt-with-caddy](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-11))
+## ทำ SSL Nginx digitalocean >> [Nginx SSL]([https://coder.com/docs/code-server/latest/guide#using-lets-encrypt-with-caddy](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-11))
+
 # install nodejs v 18.x
 ### add keyrings
 ```shell
