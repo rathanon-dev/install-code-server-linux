@@ -108,6 +108,8 @@ umount /mnt/sys
 umount /mnt
 ```
 Reboot VPS 
+
+https://blog.logrocket.com/how-to-run-node-js-server-nginx/
 # install nodejs v 18.x
 ### add keyrings
 ```shell
