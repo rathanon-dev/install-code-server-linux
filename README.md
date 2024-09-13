@@ -65,21 +65,22 @@ sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | 
 `$ sudo systemctl reload caddy`
 ## ทำ SSL Nginx digitalocean >> [Nginx SSL](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-11)
 # อนุญาตการเชื่อมต่อ SSH ผ่าน UFW ห้ามลืมเด็ดขาด!!!!!!! 
-วิธีแก้ ssh ไม่ เพราะไม่เปิด firewall ssh port 22 (เฉพาะ VPS ค่าย OVH) \n
+วิธีแก้ ssh ไม่ เพราะไม่เปิด firewall ssh port 22 (เฉพาะ VPS ค่าย OVH)
+
 ![image](https://github.com/user-attachments/assets/c304fe7a-8743-4dd2-8a6a-059203c5cc81)
- หา setting Reboot in rescue mode\n
- ![image](https://github.com/user-attachments/assets/bb42891a-649a-4cdc-a357-4a6ec129df29)
+
+ หา setting Reboot in rescue mode
  เข้าผ่าน KVM ดู use : password
- เข้า ssh ตาม use : password  (rescue mode)\n
-
+ เข้า ssh ตาม use : password  (rescue mode)
+ 
  ![image](https://github.com/user-attachments/assets/46196f49-0426-441e-8455-cd3caf06abad)
-
+ 
  เมื่อคุณเข้าสู่ rescue mode ไดรฟ์ระบบของคุณอาจไม่ได้ถูก mount โดยอัตโนมัติ
    ค้นหาไดรฟ์ที่ใช้สำหรับ root filesystem โดยใช้คำสั่ง:
 ```shell
 fdisk -l
 ```
-\n
+
 ![image](https://github.com/user-attachments/assets/810a0030-b5d5-4362-8c62-f96808147c35)
 
 เมื่อรู้ว่า partition ไหนเป็น root ให้ mount ไดรฟ์ด้วยคำสั่ง:
