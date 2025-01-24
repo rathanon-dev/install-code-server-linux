@@ -1,4 +1,6 @@
 # install-code-server-linux
+> [!NOTE]  
+> ย้ายจาก [github.com/ratanon-144](https://github.com/ratanon-144) :fast_forward: [github.com/rathanon-dev](https://github.com/rathanon-dev)
 ## การติดตัง code-server ใน linux
 # Create VPN linux 
 ### เลือกผู้ให้บริการ VPS Server [OVHcloud: Cloud Computing & Web Hosting](https://ca.ovh.com/) or Cloud VPS etc.
